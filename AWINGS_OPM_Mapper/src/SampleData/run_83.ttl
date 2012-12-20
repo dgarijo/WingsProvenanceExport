@@ -1,0 +1,175 @@
+@prefix tmp: <http://www.isi.edu/WINGS/AbstracctSubWFFATCAT.owl#> .
+@prefix dc: <http://www.isi.edu/dc/ontology.owl#> .
+@prefix dclib: <http://www.isi.edu/dc/WINGS/library.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdom: <http://www.isi.edu/dc/WINGS/ontology.owl#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix wflow: <http://www.isi.edu/2007/08/workflow.owl#> .
+@prefix ac: <http://www.isi.edu/ac/ontology.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix acdom: <http://www.isi.edu/ac/WINGS/library.owl#> .
+
+<http://wind.isi.edu/marbles/assets/components/workflow_portal/users/2/WINGS/runs/run_83.ttl>
+	wflow:hasRunId "83"^^xsd:integer ;
+	wflow:hasUser "daniel"^^xsd:string ;
+	wflow:creationTool "http://wings.isi.edu"^^xsd:anyURI ;
+	wflow:hasLicense "http://creativecommons.org/licenses/by-sa/3.0/"^^xsd:anyURI ;
+	wflow:hasExecutionEngine [
+		wflow:usesTool [
+			wflow:hasID "Pegasus" ;
+			wflow:hasURL <http://pegasus.isi.edu> ;
+			wflow:hasVersion "3.1.0" ;
+		] ;
+		wflow:usesTool [
+			wflow:hasID "Condor" ;
+			wflow:hasURL <http://www.cs.wisc.edu/condor/> ;
+			wflow:hasVersion "7.6.3" ;
+		] ;
+	] ;
+	wflow:usesTemplate [
+		wflow:hasID tmp:AbstracctSubWFFATCAT ;
+		wflow:hasURL <http://wind.isi.edu/marbles/assets/components/workflow_portal/users/2/WINGS/ontology/WINGS/AbstracctSubWFFATCAT.owl> ;
+		wflow:hasTemplateDiagram <http://wind.isi.edu/marbles/assets/components/workflow_portal/users/2/WINGS/ontology/WINGS/AbstracctSubWFFATCAT.owl.png>
+	] ;
+	wflow:hasExecutionDiagram <http://wind.isi.edu/marbles/assets/components/workflow_portal/users/2/WINGS/runs/run_83.png> ;
+	wflow:hasStatus "SUCCESS"^^xsd:string ;
+	wflow:hasStartTime "2011-10-03T13:39:29-07:00"^^xsd:dateTime ;
+	wflow:hasEndTime "2011-10-03T13:44:17-07:00"^^xsd:dateTime ;
+	wflow:hasNode [
+		wflow:hasID tmp:URLChecker ;
+		wflow:hasComponentType acdom:URLChecker ;
+		wflow:hasComponentBinding [
+			wflow:hasComponent acdom:FATCATURLChecker ;
+			wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/FATCATURLChecker.zip> ;
+			wflow:hasInput [
+					ac:hasArgumentID "listToCheck" ;
+					wflow:hasVariable tmp:list ;
+					wflow:hasDataBinding dclib:8629a3078c782e8f4f53f5df55638e7c ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "checkedList" ;
+					wflow:hasVariable tmp:checkedList ;
+					wflow:hasDataBinding dclib:883a250e40410f8dd213481a0df803e8 ;
+			] ;
+		] ;
+	] ;
+	wflow:hasNode [
+		wflow:hasID tmp:FormatStepToCompareDissimilarProteinStructures ;
+		wflow:hasComponentType acdom:FormatStepToCompareDissimilarProteinStructures ;
+		wflow:hasComponentBinding [
+			wflow:hasComponent acdom:GetSignificantResults ;
+			wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/GetSignificantResults.zip> ;
+			wflow:hasInput [
+					ac:hasArgumentID "rawInteractionNetwork" ;
+					wflow:hasVariable tmp:rawInteractionNetwork ;
+					wflow:hasDataBinding dclib:SmapResultsSorted1 ;
+			] ;
+			wflow:hasInput [
+					ac:hasArgumentID "tbProteinInfo" ;
+					wflow:hasVariable tmp:tbProteinInfo ;
+					wflow:hasDataBinding dclib:tb_protein_info ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "significantResults" ;
+					wflow:hasVariable tmp:significantResults ;
+					wflow:hasDataBinding dclib:eb89e673d6dc0cb32755c2f7cb970a89 ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "list" ;
+					wflow:hasVariable tmp:list ;
+					wflow:hasDataBinding dclib:8629a3078c782e8f4f53f5df55638e7c ;
+			] ;
+		] ;
+	] ;
+	wflow:hasNode [
+		wflow:hasID tmp:CompareDissimilarProteinStructures ;
+		wflow:hasComponentType acdom:CompareDissimilarProteinStructures ;
+		wflow:hasComponentBinding [
+			wflow:hasComponent acdom:FATCAT ;
+			wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/FATCAT.zip> ;
+			wflow:hasInput [
+					ac:hasArgumentID "inputList" ;
+					wflow:hasVariable tmp:checkedList ;
+					wflow:hasDataBinding dclib:883a250e40410f8dd213481a0df803e8 ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "comparisonOutput" ;
+					wflow:hasVariable tmp:comparisonOutput ;
+					wflow:hasDataBinding dclib:4bd5a838db717dbdc52d68e9a764ff2f ;
+			] ;
+		] ;
+	] ;
+	wflow:hasNode [
+		wflow:hasID tmp:RemoveSignificantPairs ;
+		wflow:hasComponentType acdom:RemoveSignificantPairs ;
+		wflow:hasComponentBinding [
+			wflow:hasComponent acdom:RemoveSigPairsFATCAT ;
+			wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/RemoveSigPairsFATCAT.zip> ;
+			wflow:hasInput [
+					ac:hasArgumentID "significantResults" ;
+					wflow:hasVariable tmp:significantResults ;
+					wflow:hasDataBinding dclib:eb89e673d6dc0cb32755c2f7cb970a89 ;
+			] ;
+			wflow:hasInput [
+					ac:hasArgumentID "comparisonOutput" ;
+					wflow:hasVariable tmp:comparisonOutput ;
+					wflow:hasDataBinding dclib:4bd5a838db717dbdc52d68e9a764ff2f ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "insignificantresults" ;
+					wflow:hasVariable tmp:insignificantresults ;
+					wflow:hasDataBinding dclib:829e90349c8f443ece5418bccbea2fd ;
+			] ;
+			wflow:hasOutput [
+					ac:hasArgumentID "significantResultsFiltered" ;
+					wflow:hasVariable tmp:significantResultsFiltered ;
+					wflow:hasDataBinding dclib:c4d17ff1b59bdc42ffa0b4938e51efe1 ;
+			] ;
+		] ;
+	] ;
+	 .
+dclib:829e90349c8f443ece5418bccbea2fd
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/829e90349c8f443ece5418bccbea2fd> ;
+	wflow:hasSize "0"^^xsd:integer ;
+	rdf:type dcdom:InsignificantResults ;
+.
+dclib:eb89e673d6dc0cb32755c2f7cb970a89
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/eb89e673d6dc0cb32755c2f7cb970a89> ;
+	wflow:hasSize "368"^^xsd:integer ;
+	rdf:type dcdom:SignificantResults ;
+.
+dclib:SmapResultsSorted1
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/SmapResultsSorted1> ;
+	wflow:hasSize "10240"^^xsd:integer ;
+	rdf:type dcdom:SMAPRawInteractionNetwork ;
+.
+dclib:4bd5a838db717dbdc52d68e9a764ff2f
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/4bd5a838db717dbdc52d68e9a764ff2f> ;
+	wflow:hasSize "216"^^xsd:integer ;
+	rdf:type dcdom:DissimilarProteinStructureComparisonOutput ;
+	rdf:type dcdom:FATCATOutput ;
+.
+dclib:883a250e40410f8dd213481a0df803e8
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/883a250e40410f8dd213481a0df803e8> ;
+	wflow:hasSize "42"^^xsd:integer ;
+	rdf:type dcdom:DissimilarProteinStructuresComparisonList ;
+	rdf:type dcdom:FATCATList ;
+.
+dclib:c4d17ff1b59bdc42ffa0b4938e51efe1
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/c4d17ff1b59bdc42ffa0b4938e51efe1> ;
+	wflow:hasSize "368"^^xsd:integer ;
+	rdf:type dcdom:SignificantResultsFiltered ;
+.
+dclib:tb_protein_info
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/tb_protein_info> ;
+	wflow:hasSize "42530"^^xsd:integer ;
+	rdf:type dcdom:TBProteinInfo ;
+.
+dclib:8629a3078c782e8f4f53f5df55638e7c
+	wflow:hasLocation <http://wings.isi.edu/opmdata/resource/2/83/8629a3078c782e8f4f53f5df55638e7c> ;
+	wflow:hasSize "42"^^xsd:integer ;
+	rdf:type dcdom:DissimilarProteinStructuresComparisonList ;
+	rdf:type dcdom:FATCATList ;
+.

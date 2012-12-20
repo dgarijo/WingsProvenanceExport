@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/WINGS/AbstracctSubWFFATCAT.owl#" uri="AbstracctSubWFFATCAT.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/WINGS/AbstractGlobalWorkflow.owl#" uri="AbstractGlobalWorkflow.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/WINGS/AbstractGlobalWorkflow2.owl#" uri="AbstractGlobalWorkflow2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/WINGS/AbstractSubWFLigandBindingSitesComparison.owl#" uri="AbstractSubWFLigandBindingSitesComparison.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/WINGS/AbstractSubWfDocking.owl#" uri="AbstractSubWfDocking.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/Water/AquaFlow_NTM.owl#" uri="AquaFlow_NTM_for_run144.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335377895581" name="http://www.isi.edu/wordbags/English_Words.owl#" uri="English_Words.owl"/>
+    </group>
+</catalog>
