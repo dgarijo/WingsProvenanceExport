@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/execution.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/executions/library.owl">
+      <owl:ObjectProperty rdf:about="/ontology/execution.owl#hasSeededTemplate"/>
+      <owl:DatatypeProperty rdf:about="/ontology/execution.owl#hasLog"/>
+      <j.0:Execution rdf:about="AquaFlow_NTM_EDM-b0c43b5f-e6a0-4c16-8875-894502d9306f.owl#AquaFlow_NTM_EDM-b0c43b5f-e6a0-4c16-8875-894502d9306f">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-05T12:04:32.951Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-05T12:04:47.148Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+</rdf:RDF>
+

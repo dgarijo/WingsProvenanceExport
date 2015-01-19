@@ -1,0 +1,1757 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/workflow.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/workflows/AquaFlow_NTM_EDM.owl">
+      <owl:Ontology rdf:about="">
+            <owl:imports rdf:resource="/ontology/workflow.owl"/>
+      </owl:Ontology>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#tellmeData"/>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#breakPoint"/>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#autoFill"/>
+      <j.0:WorkflowTemplate rdf:ID="AquaFlow_NTM_EDM">
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="flow_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="flow">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=419.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >flow</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="slope_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="slope">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=587.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >slope</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="depth_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="depth">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=344.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >depth</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="velocity_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="velocity">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=654.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >velocity</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="Longitude_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="Longitude">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=101.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Longitude</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="barpress_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="barpress">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=190.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >barpress</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="DailyData_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="DailyData">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=489.5,y=36.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >InputSensorData</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >1</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="date_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="date">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=277.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >date</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="Latitude_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="Latitude">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=20.5,y=512.5</rdfs:comment>
+                                    <j.0:autoFill rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >true</j.0:autoFill>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Latitude</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_FilteredSensorData_port_InputSensorData2">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="CalculateHourlyAverages">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=434.5,y=432.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="CalculateHourlyAverages_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#CalculateHourlyAverages"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="CalculateHourlyAverages_crule">
+                                                <j.0:createSetsOn rdf:resource="#CalculateHourlyAverages_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputSensorData2">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputSensorData2_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputSensorData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_OutputHourlyData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_OutputHourlyData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >OutputHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="CalculateHourlyAverages_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-1b798d5d-e9d0-4d93-890d-4243f71cfc30">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputSensorData2"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputSensorData2"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="FilterTimestampsAndData">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=431.5,y=274.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="FilterTimestampsAndData_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#FilterTimestampsAndData"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="FilterTimestampsAndData_crule">
+                                                <j.0:createSetsOn rdf:resource="#FilterTimestampsAndData_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputSensorData1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputSensorData1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputSensorData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_FilteredSensorData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_FilteredSensorData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >FilteredSensorData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="FilterTimestampsAndData_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-38556c45-6e6a-4b92-a4ff-351936fcf081">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputSensorData1"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#port_FilteredSensorData"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="FilteredData">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=481.5,y=353.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputHourlyData_port_PrevDayHourlyData">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="NightTimeModel">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=159.5,y=591.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="NightTimeModel_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#NightTimeModel"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="NightTimeModel_crule">
+                                                <j.0:createSetsOn rdf:resource="#NightTimeModel_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_PrevDayHourlyData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_PrevDayHourlyData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >PrevDayHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputHourlyData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputHourlyData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Latitude">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Latitude_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Latitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Longitude">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Longitude_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Longitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_MeanNightDO">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_MeanNightDO_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >MeanNightDO</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_OutputNTMParams">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_OutputNTMParams_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >OutputNTMParams</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="NightTimeModel_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:NWise rdf:ID="_nwise-21589813-9d23-498c-b324-5f5a89490da4">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_PrevDayHourlyData"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Latitude"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Longitude"/>
+                                                            <j.0:hasExpressionArgument>
+                                                            
+      <j.0:Shift rdf:ID="_shift-cebae9f9-5ad7-4db4-bf6c-50de913262e3">
+            <j.0:hasExpressionArgument rdf:resource="#port_InputHourlyData"/>
+      </j.0:Shift>                                          </j.0:hasExpressionArgument>
+                                                      </j.0:NWise>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_PrevDayHourlyData"/>
+                        <j.0:hasOriginNode rdf:resource="#CalculateHourlyAverages"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputHourlyData"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="HourlyData">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=484.5,y=512.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Latitude1">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="MetabolismCalculation">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=150.5,y=750.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="MetabolismCalculation_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#MetabolismCalculation"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="MetabolismCalculation_crule">
+                                                <j.0:createSetsOn rdf:resource="#MetabolismCalculation_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Latitude1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Latitude1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Latitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputParameters1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputParameters1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputParameters</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputDOFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputDOFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputDOFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Longitude1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Longitude1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Longitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_NightParameters">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_NightParameters_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >NightParameters</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_OutputMetabolismEstimates">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_OutputMetabolismEstimates_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >OutputMetabolismEstimates</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="MetabolismCalculation_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:NWise rdf:ID="_nwise-a7ccd0c8-3806-4c51-b818-836d3951bad0">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Latitude1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputParameters1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputDOFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Longitude1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_NightParameters"/>
+                                                      </j.0:NWise>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_Latitude1"/>
+                        <j.0:hasVariable rdf:resource="#Latitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_velocity1">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="CreateParametersFile">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=301.5,y=591.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="CreateParametersFile_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#CreateParametersFile"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="CreateParametersFile_crule">
+                                                <j.0:createSetsOn rdf:resource="#CreateParametersFile_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_velocity1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_velocity1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >velocity</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputHourlyData1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputHourlyData1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_depth1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_depth1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >depth</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_date">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_date_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >date</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_barpress1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_barpress1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >barpress</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_slope1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_slope1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >slope</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_flow1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_flow1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >flow</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_OutputParameters1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_OutputParameters1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >OutputParameters</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="CreateParametersFile_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:NWise rdf:ID="_nwise-44e0d952-0595-46de-b963-e46c44d0a09e">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_velocity1"/>
+                                                            <j.0:hasExpressionArgument>
+                                                            
+      <j.0:Shift rdf:ID="_shift-511349b0-8894-4ee8-97bd-a1f808cffbc5">
+            <j.0:hasExpressionArgument rdf:resource="#port_InputHourlyData1"/>
+      </j.0:Shift>                                          </j.0:hasExpressionArgument>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_depth1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_date"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_barpress1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_slope1"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_flow1"/>
+                                                      </j.0:NWise>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_velocity1"/>
+                        <j.0:hasVariable rdf:resource="#velocity"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputParameters1_port_InputParameters1">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalculation"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputParameters1"/>
+                        <j.0:hasOriginNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputParameters1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="ParametersFile">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=357.5,y=670.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_Algorithm_op">
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="MergeMetabolismResults">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=247.5,y=1067.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="MergeMetabolismResults_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#MergeMetabolismResults"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="MergeMetabolismResults_crule">
+                                                <j.0:createSetsOn rdf:resource="#MergeMetabolismResults_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_NTMResults">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_NTMResults_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >NTMResults</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_OtherResults">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_OtherResults_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >OtherResults</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_Algorithm">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Algorithm_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Algorithm</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_MergedResults">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_MergedResults_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >MergedResults</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="MergeMetabolismResults_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:NWise rdf:ID="_nwise-86210757-9635-41c6-b0ce-78e2d9a85412">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_NTMResults"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_OtherResults"/>
+                                                      </j.0:NWise>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#port_Algorithm"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Algorithm">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=248.5,y=1146.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_MergedResults_port_InputMetabolismFiles1">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="CreatePlots">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=302.5,y=1226.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="CreatePlots_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#CreatePlots"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="CreatePlots_crule">
+                                                <j.0:createSetsOn rdf:resource="#CreatePlots_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputMetabolismFiles1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputMetabolismFiles1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputMetabolismFiles</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >1</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_CR241">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_CR241_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >CR24</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_PR1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_PR1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >PR</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_Sum_CorrDO1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Sum_CorrDO1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Sum_CorrDO</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_Photo_Rest1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Photo_Rest1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Photo_Rest</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_GPP1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_GPP1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >GPP</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_NDM1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_NDM1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >NDM</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="CreatePlots_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-dba7b31c-1657-451e-80f5-48e57a9671e6">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputMetabolismFiles1"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputMetabolismFiles1"/>
+                        <j.0:hasOriginNode rdf:resource="#MergeMetabolismResults"/>
+                        <j.0:hasOriginPort rdf:resource="#port_MergedResults"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="MergedResults">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=342.5,y=1146.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_PR1_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_PR1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="PR">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=505.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_MetabolismResults_port_OtherResults">
+                        <j.0:hasDestinationNode rdf:resource="#MergeMetabolismResults"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_OtherResults"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="MetabolismCalcEmpirical">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=341.5,y=908.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="MetabolismCalcEmpirical_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#MetabolismCalcEmpirical"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="MetabolismCalcEmpirical_crule">
+                                                <j.0:createSetsOn rdf:resource="#MetabolismCalcEmpirical_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputHourlyData2">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputHourlyData2_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Longitude2">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Longitude2_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Longitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_Latitude2">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_Latitude2_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Latitude</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_ReaerationParameters">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_ReaerationParameters_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >ReaerationParameters</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_PrevDayHourlyData1">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_PrevDayHourlyData1_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >PrevDayHourlyData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_MetabolismResults">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_MetabolismResults_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >MetabolismResults</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="MetabolismCalcEmpirical_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:NWise rdf:ID="_nwise-c1bfe6a6-7198-45c8-9509-614f91223091">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Longitude2"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_Latitude2"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_ReaerationParameters"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_PrevDayHourlyData1"/>
+                                                            <j.0:hasExpressionArgument>
+                                                            
+      <j.0:Shift rdf:ID="_shift-48bab6f6-8544-4767-90ea-a45af86b2776">
+            <j.0:hasExpressionArgument rdf:resource="#port_InputHourlyData2"/>
+      </j.0:Shift>                                          </j.0:hasExpressionArgument>
+                                                      </j.0:NWise>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#port_MetabolismResults"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="MetabolismEDM">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=340.5,y=988.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_date">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_date"/>
+                        <j.0:hasVariable rdf:resource="#date"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_barpress1">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_barpress1"/>
+                        <j.0:hasVariable rdf:resource="#barpress"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputHourlyData_port_InputHourlyData2">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalcEmpirical"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputHourlyData2"/>
+                        <j.0:hasOriginNode rdf:resource="#CalculateHourlyAverages"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputHourlyData"/>
+                        <j.0:hasVariable rdf:resource="#HourlyData"/>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputHourlyData_port_InputHourlyData">
+                        <j.0:hasDestinationNode rdf:resource="#NightTimeModel"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputHourlyData"/>
+                        <j.0:hasOriginNode rdf:resource="#CalculateHourlyAverages"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputHourlyData"/>
+                        <j.0:hasVariable rdf:resource="#HourlyData"/>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_slope1">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_slope1"/>
+                        <j.0:hasVariable rdf:resource="#slope"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_Photo_Rest1_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_Photo_Rest1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Photo_Rest">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=394.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_InputSensorData">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="ConvertToStandardFormat">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=429.5,y=115.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="ConvertToStandardFormat_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#ConvertToStandardFormat"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="ConvertToStandardFormat_crule">
+                                                <j.0:createSetsOn rdf:resource="#ConvertToStandardFormat_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputSensorData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputSensorData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputSensorData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_FormattedSensorData">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_FormattedSensorData_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >FormattedSensorData</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="ConvertToStandardFormat_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-b9114fd2-ea19-4e67-9594-38aa54ca215d">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputSensorData"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputSensorData"/>
+                        <j.0:hasVariable rdf:resource="#DailyData"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Longitude1">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalculation"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_Longitude1"/>
+                        <j.0:hasVariable rdf:resource="#Longitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_GPP1_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_GPP1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="GPP">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=259.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Latitude2">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalcEmpirical"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_Latitude2"/>
+                        <j.0:hasVariable rdf:resource="#Latitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputNTMParams_port_NightParameters">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalculation"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_NightParameters"/>
+                        <j.0:hasOriginNode rdf:resource="#NightTimeModel"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputNTMParams"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="NightParams">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=247.5,y=670.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Latitude">
+                        <j.0:hasDestinationNode rdf:resource="#NightTimeModel"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_Latitude"/>
+                        <j.0:hasVariable rdf:resource="#Latitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_FormattedSensorData_port_InputSensorData1">
+                        <j.0:hasDestinationNode rdf:resource="#FilterTimestampsAndData"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputSensorData1"/>
+                        <j.0:hasOriginNode rdf:resource="#ConvertToStandardFormat"/>
+                        <j.0:hasOriginPort rdf:resource="#port_FormattedSensorData"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="FormattedData">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=473.5,y=194.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_CR241_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_CR241"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="CR24">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=185.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_Sum_CorrDO1_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_Sum_CorrDO1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Sum_CorrDO">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=569.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_depth1">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_depth1"/>
+                        <j.0:hasVariable rdf:resource="#depth"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_flow1">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_flow1"/>
+                        <j.0:hasVariable rdf:resource="#flow"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Longitude">
+                        <j.0:hasDestinationNode rdf:resource="#NightTimeModel"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_Longitude"/>
+                        <j.0:hasVariable rdf:resource="#Longitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_port_Longitude2">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalcEmpirical"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_Longitude2"/>
+                        <j.0:hasVariable rdf:resource="#Longitude"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputParameters1_port_InputParameters">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="ReaerationEDM">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=354.5,y=750.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="ReaerationEDM_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#ReaerationEDM"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="ReaerationEDM_crule">
+                                                <j.0:createSetsOn rdf:resource="#ReaerationEDM_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="port_InputParameters">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_InputParameters_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >InputParameters</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="port_ReaerationResults">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="port_ReaerationResults_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >ReaerationResults</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="ReaerationEDM_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-f552217c-71fa-4a49-90f0-be6d6cd6d2be">
+                                                            <j.0:hasExpressionArgument rdf:resource="#port_InputParameters"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputParameters"/>
+                        <j.0:hasOriginNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputParameters1"/>
+                        <j.0:hasVariable rdf:resource="#ParametersFile"/>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_ReaerationResults_port_ReaerationParameters">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalcEmpirical"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_ReaerationParameters"/>
+                        <j.0:hasOriginNode rdf:resource="#ReaerationEDM"/>
+                        <j.0:hasOriginPort rdf:resource="#port_ReaerationResults"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="ReaerationParams">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=529.5,y=829.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputMetabolismEstimates_port_NTMResults">
+                        <j.0:hasDestinationNode rdf:resource="#MergeMetabolismResults"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_NTMResults"/>
+                        <j.0:hasOriginNode rdf:resource="#MetabolismCalculation"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputMetabolismEstimates"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="MetabolismNTM">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=156.5,y=908.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_MeanNightDO_port_InputDOFile">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalculation"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputDOFile"/>
+                        <j.0:hasOriginNode rdf:resource="#NightTimeModel"/>
+                        <j.0:hasOriginPort rdf:resource="#port_MeanNightDO"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="NightDO">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=163.5,y=670.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputHourlyData_port_InputHourlyData1">
+                        <j.0:hasDestinationNode rdf:resource="#CreateParametersFile"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_InputHourlyData1"/>
+                        <j.0:hasOriginNode rdf:resource="#CalculateHourlyAverages"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputHourlyData"/>
+                        <j.0:hasVariable rdf:resource="#HourlyData"/>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="port_NDM1_op">
+                        <j.0:hasOriginNode rdf:resource="#CreatePlots"/>
+                        <j.0:hasOriginPort rdf:resource="#port_NDM1"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="NDM">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=328.5,y=1305.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="port_OutputHourlyData_port_PrevDayHourlyData1">
+                        <j.0:hasDestinationNode rdf:resource="#MetabolismCalcEmpirical"/>
+                        <j.0:hasDestinationPort rdf:resource="#port_PrevDayHourlyData1"/>
+                        <j.0:hasOriginNode rdf:resource="#CalculateHourlyAverages"/>
+                        <j.0:hasOriginPort rdf:resource="#port_OutputHourlyData"/>
+                        <j.0:hasVariable rdf:resource="#HourlyData"/>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasMetadata>
+                  <j.0:Metadata rdf:ID="AquaFlow_NTM_EDM_meta">
+                        <j.0:hasContributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >admin</j.0:hasContributor>
+                        <j.0:lastUpdateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2014-10-03T06:30:50Z</j.0:lastUpdateTime>
+                  </j.0:Metadata>
+            </j.0:hasMetadata>
+            <j.0:hasNode rdf:resource="#FilterTimestampsAndData"/>
+            <j.0:hasNode rdf:resource="#CalculateHourlyAverages"/>
+            <j.0:hasNode rdf:resource="#NightTimeModel"/>
+            <j.0:hasNode rdf:resource="#MetabolismCalculation"/>
+            <j.0:hasNode rdf:resource="#CreateParametersFile"/>
+            <j.0:hasNode rdf:resource="#ReaerationEDM"/>
+            <j.0:hasNode rdf:resource="#MergeMetabolismResults"/>
+            <j.0:hasNode rdf:resource="#CreatePlots"/>
+            <j.0:hasNode rdf:resource="#MetabolismCalcEmpirical"/>
+            <j.0:hasNode rdf:resource="#ConvertToStandardFormat"/>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="GPP_orole">
+                        <j.0:mapsToVariable rdf:resource="#GPP"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >GPP</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="Photo_Rest_orole">
+                        <j.0:mapsToVariable rdf:resource="#Photo_Rest"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Photo_Rest</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="CR24_orole">
+                        <j.0:mapsToVariable rdf:resource="#CR24"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >CR24</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="Algorithm_orole">
+                        <j.0:mapsToVariable rdf:resource="#Algorithm"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Algorithm</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="PR_orole">
+                        <j.0:mapsToVariable rdf:resource="#PR"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >PR</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="NDM_orole">
+                        <j.0:mapsToVariable rdf:resource="#NDM"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >NDM</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="Sum_CorrDO_orole">
+                        <j.0:mapsToVariable rdf:resource="#Sum_CorrDO"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Sum_CorrDO</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3</j.0:hasVersion>
+      </j.0:WorkflowTemplate>
+</rdf:RDF>
+

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/execution.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/CompareFiles/executions/Words_abs-3cb7ac-f3cc24fb-0638-446d-a9c8-86885f9597fb.owl">
+      <j.0:Execution rdf:ID="Words_abs-3cb7ac-f3cc24fb-0638-446d-a9c8-86885f9597fb">
+            <j.0:hasPlan rdf:resource="Words_abs-3cb7ac-fead07e4-3916-4477-aafa-1e128d45c2fb.owl#Words_abs-3cb7ac-fead07e4-3916-4477-aafa-1e128d45c2fb"/>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#countDuplicatesNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:42.803Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:43.429Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Uploading files to Wind
+Running on Wind
+/home/varunr/.wingstest/users/admin/CompareFiles/code/library/countDuplicates/run -o1 /home/varunr/.wingstest/users/admin/CompareFiles/data/WordCountInFile2-lzmzn2dwyixf9twxyndmm8tj -i1 /home/varunr/.wingstest/users/admin/CompareFiles/data/CleanWords2-cvcv5h80ibag439tzu1he4ix8 -i2 4
+Input1: /home/varunr/.wingstest/users/admin/CompareFiles/data/CleanWords2-cvcv5h80ibag439tzu1he4ix8
+Input2: 4 (parameter)
+Outputs1: /home/varunr/.wingstest/users/admin/CompareFiles/data/WordCountInFile2-lzmzn2dwyixf9twxyndmm8tj
+
+Downloading output files from Wind
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#removePatternNode_3">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.476Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:42.783Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Uploading files to SKC
+Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/removePattern/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/CleanWords2-cvcv5h80ibag439tzu1he4ix8 -i1 /home/varunr/.skc/users/admin/CompareFiles/data/NonTrivialWords2-cdplsyzmwdruveha46vxzxtrd -i2 /home/varunr/.skc/users/admin/CompareFiles/data/en_trivials
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/NonTrivialWords2-cdplsyzmwdruveha46vxzxtrd
+Input2: /home/varunr/.skc/users/admin/CompareFiles/data/en_trivials
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/CleanWords2-cvcv5h80ibag439tzu1he4ix8
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#countDuplicatesNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.659Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:42.422Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Uploading files to SKC
+Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/countDuplicates/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile1-cavw5dnti10b6jxb24yp4b4lj -i1 /home/varunr/.skc/users/admin/CompareFiles/data/CleanWords1-7v00htoitvbrpdo61kgyudtm0 -i2 4
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/CleanWords1-7v00htoitvbrpdo61kgyudtm0
+Input2: 4 (parameter)
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile1-cavw5dnti10b6jxb24yp4b4lj
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#pdf2textNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:33.825Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:38.537Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/pdf2text/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/Text1-3wdoll3naqw0ns6wert5jsgkr -i1 /home/varunr/.skc/users/admin/CompareFiles/data/bai-fri-bie-mci-aaai08nectar.pdf
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/bai-fri-bie-mci-aaai08nectar.pdf
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/Text1-3wdoll3naqw0ns6wert5jsgkr
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#compareNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:43.446Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:44.174Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Uploading files to SKC
+Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/compare/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/LikelihoodFile-6gyq2a8hvl9ysud9biqc54a2a -i1 /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile1-cavw5dnti10b6jxb24yp4b4lj -i2 /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile2-lzmzn2dwyixf9twxyndmm8tj
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile1-cavw5dnti10b6jxb24yp4b4lj
+Input2: /home/varunr/.skc/users/admin/CompareFiles/data/WordCountInFile2-lzmzn2dwyixf9twxyndmm8tj
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/LikelihoodFile-6gyq2a8hvl9ysud9biqc54a2a
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#removePatternNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:39.693Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.456Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/CompareFiles/code/library/removePattern/run -o1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/NonTrivialWords2-cdplsyzmwdruveha46vxzxtrd -i1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Words2-6e3gu7ig8ujmdctyuvawle9u -i2 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/specialchars
+Input1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Words2-6e3gu7ig8ujmdctyuvawle9u
+Input2: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/specialchars
+Outputs1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/NonTrivialWords2-cdplsyzmwdruveha46vxzxtrd
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#getSortedWordsNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:38.565Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:38.635Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/CompareFiles/code/library/getSortedWords/run -o1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Words1-1rlh13yaq0vuiq1apy617a83h -i1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Text1-3wdoll3naqw0ns6wert5jsgkr
+Input1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Text1-3wdoll3naqw0ns6wert5jsgkr
+Outputs1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/Words1-1rlh13yaq0vuiq1apy617a83h
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#removePatternNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:38.656Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.072Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Running on Wind
+/home/varunr/.wingstest/users/admin/CompareFiles/code/library/removePattern/run -o1 /home/varunr/.wingstest/users/admin/CompareFiles/data/NonTrivialWords1-4hd8iq6yssyx900eadwk1i9uh -i1 /home/varunr/.wingstest/users/admin/CompareFiles/data/Words1-1rlh13yaq0vuiq1apy617a83h -i2 /home/varunr/.wingstest/users/admin/CompareFiles/data/specialchars
+Input1: /home/varunr/.wingstest/users/admin/CompareFiles/data/Words1-1rlh13yaq0vuiq1apy617a83h
+Input2: /home/varunr/.wingstest/users/admin/CompareFiles/data/specialchars
+Outputs1: /home/varunr/.wingstest/users/admin/CompareFiles/data/NonTrivialWords1-4hd8iq6yssyx900eadwk1i9uh
+
+Downloading output files from Wind
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#removePatternNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.109Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:41.643Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/CompareFiles/code/library/removePattern/run -o1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/CleanWords1-7v00htoitvbrpdo61kgyudtm0 -i1 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/NonTrivialWords1-4hd8iq6yssyx900eadwk1i9uh -i2 /usr/share/tomcat6/storage/users/admin/CompareFiles/data/en_trivials
+Input1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/NonTrivialWords1-4hd8iq6yssyx900eadwk1i9uh
+Input2: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/en_trivials
+Outputs1: /usr/share/tomcat6/storage/users/admin/CompareFiles/data/CleanWords1-7v00htoitvbrpdo61kgyudtm0
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#getSortedWordsNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:39.12Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:39.675Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/getSortedWords/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/Words2-6e3gu7ig8ujmdctyuvawle9u -i1 /home/varunr/.skc/users/admin/CompareFiles/data/Text2-2oxydousnol5ss0r9mogkwbal
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/Text2-2oxydousnol5ss0r9mogkwbal
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/Words2-6e3gu7ig8ujmdctyuvawle9u
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#html2textNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:33.846Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:14:39.098Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Uploading files to SKC
+Running on SKC
+/home/varunr/.skc/users/admin/CompareFiles/code/library/html2text/run -o1 /home/varunr/.skc/users/admin/CompareFiles/data/Text2-2oxydousnol5ss0r9mogkwbal -i1 /home/varunr/.skc/users/admin/CompareFiles/data/en_New_York_City.html
+Input1: /home/varunr/.skc/users/admin/CompareFiles/data/en_New_York_City.html
+Outputs1: /home/varunr/.skc/users/admin/CompareFiles/data/Text2-2oxydousnol5ss0r9mogkwbal
+
+Downloading output files from SKC
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasTemplate rdf:resource="../workflows/Words_abs.owl#Words_abs"/>
+            <j.0:hasExpandedTemplate rdf:resource="Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1.owl#Words_abs-3cb7ac-ff82a8bd-89c7-4d0c-bffb-4aa4b8e695b1"/>
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-19T13:14:33.802Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-19T13:14:44.191Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+            <j.0:hasSeededTemplate rdf:resource="../workflows/Words_abs-b42407a4-654d-4bff-93e2-6272ac1ebe35.owl#Words_abs-b42407a4-654d-4bff-93e2-6272ac1ebe35"/>
+      </j.0:Execution>
+</rdf:RDF>
+

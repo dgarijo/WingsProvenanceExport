@@ -1,0 +1,1294 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/workflow.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.1="http://www.wings-workflows.org/wings-portal/export/users/admin/CompareFiles/data/ontology.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/CompareFiles/workflows/Words_abs.owl">
+      <owl:Ontology rdf:about="">
+            <owl:imports rdf:resource="/ontology/workflow.owl"/>
+      </owl:Ontology>
+      <owl:ObjectProperty rdf:about="/ontology/workflow.owl#derivedFrom"/>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#tellmeData"/>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#breakPoint"/>
+      <owl:DatatypeProperty rdf:about="/ontology/workflow.owl#autoFill"/>
+      <j.0:WorkflowTemplate rdf:ID="Words_abs">
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File2SpecialChars_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="File2SpecialChars">
+                                    <rdf:type rdf:resource="../data/ontology.owl#PatternFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=393.5,y=353.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input2PatternFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File1MinLimitOccurances_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="File1MinLimitOccurances">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=239.5,y=670.5</rdfs:comment>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Param1threshold</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File2MinLimitOccurances_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="File2MinLimitOccurances">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=551.5,y=670.5</rdfs:comment>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Param1threshold</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="FormattedFile2_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="FormattedFile2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#FormattedFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=290.5,y=36.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input1FormattedFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File1TrivialWords_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="File1TrivialWords">
+                                    <rdf:type rdf:resource="../data/ontology.owl#PatternFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=188.5,y=512.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input2PatternFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File2TrivialWords_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="File2TrivialWords">
+                                    <rdf:type rdf:resource="../data/ontology.owl#PatternFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=485.5,y=512.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input2PatternFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="File1SpecialChars_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="File1SpecialChars">
+                                    <rdf:type rdf:resource="../data/ontology.owl#PatternFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=134.5,y=353.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input2PatternFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="FormattedFile1_irole">
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="FormattedFile1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#FormattedFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=31.5,y=36.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Input1FormattedFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removePatternNode_1_1_1_Output1WordListFile_countDuplicatesNode_Input1WordListFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="countDuplicatesNode">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=241.5,y=750.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="countDuplicatesNode_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#countDuplicates"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="countDuplicatesNode_crule">
+                                                <j.0:createSetsOn rdf:resource="#countDuplicatesNode_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_Param1threshold">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_Param1threshold_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Param1threshold</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_Output1WordCountFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_Output1WordCountFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordCountFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="countDuplicatesNode_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-900cef6d-85af-4a7b-bfcc-8de06f10818a">
+                                                            <j.0:hasExpressionArgument rdf:resource="#countDuplicatesNode_Param1threshold"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#countDuplicatesNode_Input1WordListFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#countDuplicatesNode_Input1WordListFile"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="removePatternNode_1_1_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=104.5,y=591.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removePatternNode_1_1_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removePattern"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removePatternNode_1_1_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#removePatternNode_1_1_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_1_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_1_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_1_Input2PatternFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_1_Input2PatternFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input2PatternFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_1_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_1_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removePatternNode_1_1_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-7c5b1afe-02fb-4f05-8135-0e048bc9319d">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_1_1_Input1WordListFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_1_1_Input2PatternFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#removePatternNode_1_1_1_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="CleanWords1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=115.5,y=670.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_countDuplicatesNode_1_1_Param1threshold">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="countDuplicatesNode_1_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=428.5,y=750.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="countDuplicatesNode_1_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#countDuplicates"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="countDuplicatesNode_1_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#countDuplicatesNode_1_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_1_1_Param1threshold">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_1_1_Param1threshold_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Param1threshold</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_1_1_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_1_1_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="countDuplicatesNode_1_1_Output1WordCountFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="countDuplicatesNode_1_1_Output1WordCountFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordCountFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="countDuplicatesNode_1_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-f5e2aad5-e283-4b3d-b0d9-64fcf6a33c3b">
+                                                            <j.0:hasExpressionArgument rdf:resource="#countDuplicatesNode_1_1_Param1threshold"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#countDuplicatesNode_1_1_Input1WordListFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#countDuplicatesNode_1_1_Param1threshold"/>
+                        <j.0:hasVariable rdf:resource="#File2MinLimitOccurances"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_countDuplicatesNode_Param1threshold">
+                        <j.0:hasDestinationNode rdf:resource="#countDuplicatesNode"/>
+                        <j.0:hasDestinationPort rdf:resource="#countDuplicatesNode_Param1threshold"/>
+                        <j.0:hasVariable rdf:resource="#File1MinLimitOccurances"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removeMarkupNode_Input1FormattedFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="removeMarkupNode">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=24.5,y=115.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removeMarkupNode_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removeMarkup"/>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removeMarkupNode_crule">
+                                                <j.0:createSetsOn rdf:resource="#removeMarkupNode_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removeMarkupNode_Input1FormattedFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removeMarkupNode_Input1FormattedFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1FormattedFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removeMarkupNode_Output1TextFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removeMarkupNode_Output1TextFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1TextFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removeMarkupNode_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-6fd389ef-166f-4c34-98a6-e9d9900da68d">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removeMarkupNode_Input1FormattedFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#removeMarkupNode_Input1FormattedFile"/>
+                        <j.0:hasVariable rdf:resource="#FormattedFile1"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removePatternNode_1_1_1_Input2PatternFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode_1_1_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_1_1_Input2PatternFile"/>
+                        <j.0:hasVariable rdf:resource="#File1TrivialWords"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removeMarkupNode_Output1TextFile_getSortedWordsNode_Input1TextFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="getSortedWordsNode">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=20.5,y=274.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="getSortedWordsNode_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#getSortedWords"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="getSortedWordsNode_crule">
+                                                <j.0:createSetsOn rdf:resource="#getSortedWordsNode_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="getSortedWordsNode_Input1TextFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="getSortedWordsNode_Input1TextFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1TextFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="getSortedWordsNode_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="getSortedWordsNode_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="getSortedWordsNode_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-8f914fea-c66d-4571-af7f-6cfb9e12caed">
+                                                            <j.0:hasExpressionArgument rdf:resource="#getSortedWordsNode_Input1TextFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#getSortedWordsNode_Input1TextFile"/>
+                        <j.0:hasOriginNode rdf:resource="#removeMarkupNode"/>
+                        <j.0:hasOriginPort rdf:resource="#removeMarkupNode_Output1TextFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Text1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#TextFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=57.5,y=194.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removePatternNode_Output1WordListFile_removePatternNode_1_1_1_Input1WordListFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode_1_1_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_1_1_Input1WordListFile"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="removePatternNode">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=41.5,y=432.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removePatternNode_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removePattern"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removePatternNode_crule">
+                                                <j.0:createSetsOn rdf:resource="#removePatternNode_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_Input2PatternFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_Input2PatternFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input2PatternFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removePatternNode_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-f224583f-bdb1-4193-a90a-29c2300cc429">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_Input2PatternFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_Input1WordListFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#removePatternNode_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="NonTrivialWords1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=39.5,y=512.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removePatternNode_1_1_Output1WordListFile_countDuplicatesNode_1_1_Input1WordListFile">
+                        <j.0:hasDestinationNode rdf:resource="#countDuplicatesNode_1_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#countDuplicatesNode_1_1_Input1WordListFile"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="removePatternNode_1_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=416.5,y=591.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removePatternNode_1_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removePattern"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removePatternNode_1_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#removePatternNode_1_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_Input2PatternFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_Input2PatternFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input2PatternFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_1_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_1_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removePatternNode_1_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-37d45657-fe90-46bb-9866-980550bab997">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_1_Input2PatternFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_1_Input1WordListFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#removePatternNode_1_1_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="CleanWords2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=427.5,y=670.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="countDuplicatesNode_1_1_Output1WordCountFile_compareNode_Input2WordCountFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="compareNode">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=361.5,y=908.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="compareNode_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#compare"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="compareNode_crule">
+                                                <j.0:createSetsOn rdf:resource="#compareNode_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="compareNode_Input2WordCountFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="compareNode_Input2WordCountFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input2WordCountFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="compareNode_Input1WordCountFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="compareNode_Input1WordCountFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordCountFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="compareNode_Output1LikelihoodFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="compareNode_Output1LikelihoodFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1LikelihoodFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="compareNode_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-e761f982-553c-46bc-ad6a-3a6a92cbe92e">
+                                                            <j.0:hasExpressionArgument rdf:resource="#compareNode_Input2WordCountFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#compareNode_Input1WordCountFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#compareNode_Input2WordCountFile"/>
+                        <j.0:hasOriginNode rdf:resource="#countDuplicatesNode_1_1"/>
+                        <j.0:hasOriginPort rdf:resource="#countDuplicatesNode_1_1_Output1WordCountFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="WordCountInFile2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordCountFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=419.5,y=829.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removePatternNode_Input2PatternFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_Input2PatternFile"/>
+                        <j.0:hasVariable rdf:resource="#File1SpecialChars"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="getSortedWordsNode_1_Output1WordListFile_removePatternNode_1_Input1WordListFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="removePatternNode_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=338.5,y=432.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removePatternNode_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removePattern"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removePatternNode_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#removePatternNode_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_Input2PatternFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_Input2PatternFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input2PatternFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_Input1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_Input1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removePatternNode_1_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removePatternNode_1_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removePatternNode_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-3c43d7fd-11db-4250-af9a-123255fd12d0">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_Input2PatternFile"/>
+                                                            <j.0:hasExpressionArgument rdf:resource="#removePatternNode_1_Input1WordListFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_Input1WordListFile"/>
+                        <j.0:hasOriginNode>
+                              <j.0:Node rdf:ID="getSortedWordsNode_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=280.5,y=274.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="getSortedWordsNode_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#getSortedWords"/>
+                                                <j.0:isConcrete
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:isConcrete>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="getSortedWordsNode_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#getSortedWordsNode_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="getSortedWordsNode_1_Input1TextFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="getSortedWordsNode_1_Input1TextFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1TextFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="getSortedWordsNode_1_Output1WordListFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="getSortedWordsNode_1_Output1WordListFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1WordListFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="getSortedWordsNode_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-04c2dd44-a667-4d49-aaa1-1f623b21fb72">
+                                                            <j.0:hasExpressionArgument rdf:resource="#getSortedWordsNode_1_Input1TextFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasOriginNode>
+                        <j.0:hasOriginPort rdf:resource="#getSortedWordsNode_1_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Words2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=311.5,y=353.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removePatternNode_1_1_Input2PatternFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode_1_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_1_Input2PatternFile"/>
+                        <j.0:hasVariable rdf:resource="#File2TrivialWords"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="getSortedWordsNode_Output1WordListFile_removePatternNode_Input1WordListFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_Input1WordListFile"/>
+                        <j.0:hasOriginNode rdf:resource="#getSortedWordsNode"/>
+                        <j.0:hasOriginPort rdf:resource="#getSortedWordsNode_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Words1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=52.5,y=353.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="countDuplicatesNode_Output1WordCountFile_compareNode_Input1WordCountFile">
+                        <j.0:hasDestinationNode rdf:resource="#compareNode"/>
+                        <j.0:hasDestinationPort rdf:resource="#compareNode_Input1WordCountFile"/>
+                        <j.0:hasOriginNode rdf:resource="#countDuplicatesNode"/>
+                        <j.0:hasOriginPort rdf:resource="#countDuplicatesNode_Output1WordCountFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="WordCountInFile1">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordCountFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=261.5,y=829.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="compareNode_Output1LikelihoodFile_op">
+                        <j.0:hasOriginNode rdf:resource="#compareNode"/>
+                        <j.0:hasOriginPort rdf:resource="#compareNode_Output1LikelihoodFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="LikelihoodFile">
+                                    <rdf:type rdf:resource="../data/ontology.owl#LikelihoodFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=353.5,y=988.5</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removePatternNode_1_Input2PatternFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_Input2PatternFile"/>
+                        <j.0:hasVariable rdf:resource="#File2SpecialChars"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removePatternNode_1_Output1WordListFile_removePatternNode_1_1_Input1WordListFile">
+                        <j.0:hasDestinationNode rdf:resource="#removePatternNode_1_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#removePatternNode_1_1_Input1WordListFile"/>
+                        <j.0:hasOriginNode rdf:resource="#removePatternNode_1"/>
+                        <j.0:hasOriginPort rdf:resource="#removePatternNode_1_Output1WordListFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="NonTrivialWords2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#WordListFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=336.5,y=512.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="ip_removeMarkupNode_1_Input1FormattedFile">
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="removeMarkupNode_1">
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=284.5,y=115.5</rdfs:comment>
+                                    <j.0:hasComponent>
+                                          <rdf:Description rdf:ID="removeMarkupNode_1_component">
+                                                <j.0:hasComponentBinding rdf:resource="../components/library.owl#removeMarkup"/>
+                                          </rdf:Description>
+                                    </j.0:hasComponent>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="removeMarkupNode_1_crule">
+                                                <j.0:createSetsOn rdf:resource="#removeMarkupNode_1_component"/>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="removeMarkupNode_1_Input1FormattedFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removeMarkupNode_1_Input1FormattedFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Input1FormattedFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="removeMarkupNode_1_Output1TextFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="removeMarkupNode_1_Output1TextFile_role">
+                                                            <j.0:hasRoleID
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Output1TextFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="removeMarkupNode_1_prule">
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-ab1779a8-a834-4005-bc31-1d0369f1446e">
+                                                            <j.0:hasExpressionArgument rdf:resource="#removeMarkupNode_1_Input1FormattedFile"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                        <j.0:hasDestinationPort rdf:resource="#removeMarkupNode_1_Input1FormattedFile"/>
+                        <j.0:hasVariable rdf:resource="#FormattedFile2"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="removeMarkupNode_1_Output1TextFile_getSortedWordsNode_1_Input1TextFile">
+                        <j.0:hasDestinationNode rdf:resource="#getSortedWordsNode_1"/>
+                        <j.0:hasDestinationPort rdf:resource="#getSortedWordsNode_1_Input1TextFile"/>
+                        <j.0:hasOriginNode rdf:resource="#removeMarkupNode_1"/>
+                        <j.0:hasOriginPort rdf:resource="#removeMarkupNode_1_Output1TextFile"/>
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="Text2">
+                                    <rdf:type rdf:resource="../data/ontology.owl#TextFile"/>
+                                    <rdfs:comment rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >x=317.5,y=194.5</rdfs:comment>
+                                    <j.1:hasLanguage rdf:resource="#WordCountInFile1_lang"/>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasMetadata>
+                  <j.0:Metadata rdf:ID="Words_abs_meta">
+                        <j.0:createdFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://localhost:8080/wings-portal/export/users/admin/CompareFiles/workflows/Words_abs_temp.owl#Words_abs_temp</j.0:createdFrom>
+                        <j.0:hasContributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >admin</j.0:hasContributor>
+                        <j.0:lastUpdateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2014-10-03T06:26:28Z</j.0:lastUpdateTime>
+                  </j.0:Metadata>
+            </j.0:hasMetadata>
+            <j.0:hasNode rdf:resource="#removePatternNode_1"/>
+            <j.0:hasNode rdf:resource="#removePatternNode_1_1_1"/>
+            <j.0:hasNode rdf:resource="#countDuplicatesNode"/>
+            <j.0:hasNode rdf:resource="#countDuplicatesNode_1_1"/>
+            <j.0:hasNode rdf:resource="#removeMarkupNode"/>
+            <j.0:hasNode rdf:resource="#removePatternNode"/>
+            <j.0:hasNode rdf:resource="#getSortedWordsNode"/>
+            <j.0:hasNode rdf:resource="#removePatternNode_1_1"/>
+            <j.0:hasNode rdf:resource="#compareNode"/>
+            <j.0:hasNode rdf:resource="#removeMarkupNode_1"/>
+            <j.0:hasNode rdf:resource="#getSortedWordsNode_1"/>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="LikelihoodFile_orole">
+                        <j.0:mapsToVariable rdf:resource="#LikelihoodFile"/>
+                        <j.0:hasRoleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >LikelihoodFile</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3</j.0:hasVersion>
+      </j.0:WorkflowTemplate>
+</rdf:RDF>
+

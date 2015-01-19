@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/execution.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/executions/AquaFlow_NTM_EDM-82ac8c45-1d2d-43bf-947b-1eb40b68e783.owl">
+      <j.0:Execution rdf:ID="AquaFlow_NTM_EDM-82ac8c45-1d2d-43bf-947b-1eb40b68e783">
+            <j.0:hasPlan rdf:resource="AquaFlow_NTM_EDM-b91a4248-9d5f-4bc9-8d41-7568bd5ece50.owl#AquaFlow_NTM_EDM-b91a4248-9d5f-4bc9-8d41-7568bd5ece50"/>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#FilterTimestampsAndDataNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.563Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.356Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-06Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-06Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ConvertToStandardFormatNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:13.445Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.508Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-06Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_06
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalcEmpiricalNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:19.053Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.473Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_EDM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-08Z_EDM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ReaerationEDMNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.416Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.907Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-07Z_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-07Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CreateParametersFileNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.2Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.453Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-07Z -p1 760.0 -p2 1.1953502 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -p4 1.0E-4 -p3 1835.8763 -p6 2010-03-07Z -p5 0.73136413
+/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-07Z -p1 760.0 -p2 1.1953502 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -p4 1.0E-4 -p3 1835.8763 -p6 2010-03-07Z -p5 0.73136413
+
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MergeMetabolismResultsNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.237Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.38Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_EDM -o2 /usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-07Z_NTM_EDM
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalcEmpiricalNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.99Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.107Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_EDM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-07Z_EDM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-06Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CreatePlotsNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.937Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:22.559Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CreatePlots/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Sum_CorrDO-arrdop0ystv29twpkz4p4ypum -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM_EDM /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM_EDM /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM_EDM -o6 /usr/share/tomcat6/storage/users/admin/Water/data/PR-erc3ephf5mdgon1uznpsx71j8 -o5 /usr/share/tomcat6/storage/users/admin/Water/data/NDM-e1enivjl8256qpfpah59s9y69 -o4 /usr/share/tomcat6/storage/users/admin/Water/data/GPP-aqfuzk04634qikp55ep4rgm8f -o3 /usr/share/tomcat6/storage/users/admin/Water/data/Photo_Rest-6ymvgmccbxafokjxryjn50ziu -o2 /usr/share/tomcat6/storage/users/admin/Water/data/CR24-9rj578k5ctkkrq2io6vnhv9av
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MergeMetabolismResultsNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.481Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.575Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_EDM -o2 /usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-08Z_NTM_EDM
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#FilterTimestampsAndDataNode_3">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.506Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.315Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-09Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-09Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CreateParametersFileNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.213Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.537Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-08Z -p1 760.0 -p2 1.0582844 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -p4 1.0E-4 -p3 1611.0309 -p6 2010-03-08Z -p5 0.6696845
+/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-08Z -p1 760.0 -p2 1.0582844 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -p4 1.0E-4 -p3 1611.0309 -p6 2010-03-08Z -p5 0.6696845
+
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#NightTimeModelNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.299Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:17.995Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-07Z -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-06Z -o2 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-07Z
+date=2010-03-07 sunrise=1267970400 sunset=1267927200
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CalculateHourlyAveragesNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.258Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.186Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-07Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#NightTimeModelNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.305Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:17.996Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-09Z -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -o2 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-09Z
+/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-09Z -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -o2 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-09Z
+date=2010-03-09 sunrise=1268143200 sunset=1268100000
+date=2010-03-09 sunrise=1268143200 sunset=1268100000
+
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CalculateHourlyAveragesNode_3">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.371Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.289Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-09Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CalculateHourlyAveragesNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.364Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.259Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-06Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-06Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#FilterTimestampsAndDataNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.482Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.25Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-07Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-07Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalculationNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:17.936Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:19.47Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-08Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-08Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-08Z
+sunrise=1268056800 sunset=1268100000
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalculationNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.092Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:20.674Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-09Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-09Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-09Z
+sunrise=1268143200 sunset=1268186400
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ReaerationEDMNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.097Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:19.669Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-09Z_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-09Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ConvertToStandardFormatNode_3">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:13.5Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.506Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-09Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_09
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CalculateHourlyAveragesNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.282Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.185Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-08Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#NightTimeModelNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.194Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:17.926Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-08Z -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z -o2 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-08Z
+date=2010-03-08 sunrise=1268056800 sunset=1268013600
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MergeMetabolismResultsNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.844Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.93Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_EDM -o2 /usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-09Z_NTM_EDM
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalculationNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.01Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:19.769Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-07Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-07Z -i2 /usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-07Z
+sunrise=1267970400 sunset=1268013600
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#MetabolismCalcEmpiricalNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:20.023Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:21.838Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_EDM -p1 37.347214 -p2 -120.97618 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -i3 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-09Z_EDM -i2 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ConvertToStandardFormatNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:13.45Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.466Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-07Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_07
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#CreateParametersFileNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.321Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:18.099Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-09Z -p1 760.0 -p2 0.9157512 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -p4 1.0E-4 -p3 1377.2166 -p6 2010-03-09Z -p5 0.6055446
+/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-09Z -p1 760.0 -p2 0.9157512 -i1 /usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z -p4 1.0E-4 -p3 1377.2166 -p6 2010-03-09Z -p5 0.6055446
+
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#FilterTimestampsAndDataNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.494Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:15.275Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-08Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-08Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ReaerationEDMNode_1">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:16.491Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:19.028Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-08Z_EDM -i1 /usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-08Z
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#ConvertToStandardFormatNode_2">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:13.471Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2015-01-19T13:30:14.451Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#string"
+                        >SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run -o1 /usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-08Z -i1 /usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_08
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasTemplate rdf:resource="../workflows/AquaFlow_NTM_EDM.owl#AquaFlow_NTM_EDM"/>
+            <j.0:hasExpandedTemplate rdf:resource="AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83.owl#AquaFlow_NTM_EDM-003ce516-d074-4eb1-a830-53fe87fcdb83"/>
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-19T13:30:13.436Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2015-01-19T13:30:22.578Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+            <j.0:hasSeededTemplate rdf:resource="../workflows/AquaFlow_NTM_EDM-e04f798b-4560-491c-a137-a9ff5e287cbd.owl#AquaFlow_NTM_EDM-e04f798b-4560-491c-a137-a9ff5e287cbd"/>
+      </j.0:Execution>
+</rdf:RDF>
+

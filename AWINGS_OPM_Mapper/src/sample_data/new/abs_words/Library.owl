@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/execution.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xml:base="http://www.wings-workflows.org/wings-portal/export/users/admin/CompareFiles/executions/library.owl">
+      <owl:ObjectProperty rdf:about="/ontology/execution.owl#hasSeededTemplate"/>
+      <owl:DatatypeProperty rdf:about="/ontology/execution.owl#hasLog"/>
+      <j.0:Execution rdf:about="Interleaved_Simp-64e43574-4adf-4dec-bca2-74d7c32787c5.owl#Interleaved_Simp-64e43574-4adf-4dec-bca2-74d7c32787c5">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-09-11T17:44:33.726Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-09-11T17:44:36.765Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="Interleaved_Simp-11ef3b7b-7400-47dc-b8d4-d054374e563e.owl#Interleaved_Simp-11ef3b7b-7400-47dc-b8d4-d054374e563e">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-09T20:53:00.168Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-09T20:53:09.548Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="English_Words-4e-c9705405-81d8-4825-a9d3-1ede05556f20.owl#English_Words-4e-c9705405-81d8-4825-a9d3-1ede05556f20">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T13:31:15.725Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T13:31:21.014Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="Words_abs-de7f9c-57c02008-4217-4c2e-850e-05c1f5338c24.owl#Words_abs-de7f9c-57c02008-4217-4c2e-850e-05c1f5338c24">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T15:37:07.899Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T15:37:14.524Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="Interleaved-8816-d6b9e469-e728-4bf7-b0b5-cc93a6308913.owl#Interleaved-8816-d6b9e469-e728-4bf7-b0b5-cc93a6308913">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T23:13:31.577Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-10-29T23:13:40.212Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="Interleaved-79e5-43f6f8fc-5ef9-4550-9192-bef6bad2bb86.owl#Interleaved-79e5-43f6f8fc-5ef9-4550-9192-bef6bad2bb86">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-09-11T20:17:13.375Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-09-11T20:17:18.596Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+      <j.0:Execution rdf:about="Interleaved-5f36-303c6718-7eab-4d98-8fe0-1950ed36cd61.owl#Interleaved-5f36-303c6718-7eab-4d98-8fe0-1950ed36cd61">
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-11-11T10:46:51.177Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2014-11-11T10:46:53.113Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Finished
+</j.0:hasLog>
+      </j.0:Execution>
+</rdf:RDF>
+
