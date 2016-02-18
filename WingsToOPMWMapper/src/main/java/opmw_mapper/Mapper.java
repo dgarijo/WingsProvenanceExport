@@ -15,6 +15,7 @@
  */
 package opmw_mapper;
 
+import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.ontology.Individual;
@@ -30,8 +31,7 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.util.FileManager;
-import java.io.FileNotFoundException;
+
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -113,6 +113,7 @@ public class Mapper {
      * Loads the files to the Local repository, to prepare conversion to OPM
      * @param template. Workflow template
      * @param modeFile. syntax of the files to load: "RDF/XML", "N-TRIPLE", "TURTLE" (or "TTL") and "N3"
+     * @throws java.lang.Exception
      */
     public void loadTemplateFileToLocalRepository(String template, String modeFile) throws Exception{
         WINGSModelTemplate = ModelFactory.createOntologyModel();//ModelFactory.createDefaultModel();
@@ -800,35 +801,38 @@ public class Mapper {
             }
             System.out.println("step "+step +"used param: "+paramName+" with value: "+paramvalue);
             this.addIndividual(OPMWModel, paramName+date,
-                    Constants.OPMW_PARAMETER_VARIABLE, "Parameter variable with value: "+paramvalue);
+                    Constants.OPMW_WORKFLOW_EXECUTION_ARTIFACT, "Parameter with value: "+paramvalue);
             this.addDataProperty(OPMWModel, 
-                    Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date, 
+                    Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date, 
                     paramvalue, 
                     Constants.OPMW_DATA_PROP_HAS_VALUE);
             this.addProperty(OPMWModel, 
                     Constants.CONCEPT_WORKFLOW_EXECUTION_PROCESS+"/"+step+date, 
-                    Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date, 
+                    Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date, 
                     Constants.OPM_PROP_USED);
             //link to template
             if(res!=null){
                 this.addProperty(OPMWModel,
-                        Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date,
+                        Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date,
                         Constants.CONCEPT_PARAMETER_VARIABLE+"/"+templateName+"_"+derived,
                         Constants.OPMW_PROP_CORRESPONDS_TO_TEMPLATE_ARTIFACT);
             }
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date,
+                accname,
+                    Constants.OPM_PROP_ACCOUNT);
             /*************************
             * PROV-O INTEROPERABILITY
             *************************/ 
-            String auxP = encode(Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date);
+            String auxP = encode(Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date);
             OntClass cP = PROVModel.createClass(Constants.PROV_ENTITY);
             cP.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+auxP);
             this.addDataProperty(PROVModel, 
-                    Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date, 
+                    Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date, 
                     paramvalue,
                     Constants.PROV_VALUE);            
             this.addProperty(PROVModel, 
                     Constants.CONCEPT_WORKFLOW_EXECUTION_PROCESS+"/"+step+date, 
-                    Constants.CONCEPT_PARAMETER_VARIABLE+"/"+paramName+date, 
+                    Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date, 
                     Constants.PROV_USED);            
         }
         //annotation of outputs
