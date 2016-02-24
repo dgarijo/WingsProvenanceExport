@@ -267,6 +267,7 @@ public class Mapper {
             Resource res = qs.getResource("?n");
             Resource comp = qs.getResource("?c");
             Resource typeComp = qs.getResource("?typeComp");
+            Literal rule = qs.getLiteral("?rule");
             //Literal isConcrete = qs.getLiteral("?isConcrete");
             System.out.println(res+" Node has component "+comp+" of type: "+ typeComp);//+ " which is concrete: "+isConcrete.getBoolean()
             //add each of the nodes as a UniqueTemplateProcess
@@ -282,7 +283,12 @@ public class Mapper {
             }else{
                 System.out.println("ANON RESOURCE "+typeComp.getURI()+" ignored");
             }
-            
+            if(rule!=null){
+                //rules are strings
+                this.addDataProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+res.getLocalName(),
+                    rule.getString(),                    
+                        Constants.WINGS_PROP_HAS_RULE);
+            }
             this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+res.getLocalName(),
                     Constants.CONCEPT_WORKFLOW_TEMPLATE+"/"+templateName,                    
                         Constants.OPMW_PROP_IS_STEP_OF_TEMPLATE);            

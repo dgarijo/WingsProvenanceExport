@@ -64,7 +64,7 @@ public class Queries {
      * @return
      */
     public static String queryNodes(){
-        String query = "SELECT ?n ?c ?typeComp ?isConcrete WHERE{"
+        String query = "SELECT ?n ?c ?typeComp ?isConcrete ?rule WHERE{"
                 + "?n a <"+Constants.WINGS_NODE+">."
                 + "?n <"+Constants.WINGS_PROP_HAS_COMPONENT+"> ?c."
                 + "?c <"+Constants.WINGS_PROP_HAS_COMPONENT_BINDING+"> ?cb."
@@ -72,7 +72,8 @@ public class Queries {
                 //filter rdfs:resource and component, which don't add any new knowledge
                 + "FILTER(<http://www.wings-workflows.org/ontology/component.owl#Component> !=?typeComp)."
                 + "FILTER(<http://www.w3.org/2000/01/rdf-schema#Resource> !=?typeComp)."
-                + "OPTIONAL{?c <"+Constants.WINGS_DATA_PROP_IS_CONCRETE+"> ?isConcrete.}}";
+                + "OPTIONAL{?c <"+Constants.WINGS_DATA_PROP_IS_CONCRETE+"> ?isConcrete.}"
+                + "OPTIONAL{?cb <"+Constants.WINGS_PROP_HAS_RULE+"> ?rule }}";
         return query;
     }
 

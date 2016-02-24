@@ -180,6 +180,8 @@ public class Constants {
     public static final String WINGS_PROP_HAS_EXECUTION_ENGINE = PREFIX_WFLOW + "hasExecutionEngine";
     public static final String WINGS_PROP_USES_TOOL = PREFIX_WFLOW + "usesTool";
     public static final String WINGS_PROP_HAS_USER = PREFIX_WEXEC + "hasUser";
+    
+    static String WINGS_PROP_HAS_RULE = "http://www.wings-workflows.org/ontology/component.owl#hasRule";
     /*****
     Wings data properties
     *****/
@@ -257,5 +259,6 @@ public class Constants {
     public static final String P_PLAN_PROP_IS_OUTPUT_VAR_OF = PREFIX_P_PLAN+ "isOutputVarOf";
     public static final String P_PLAN_PROP_CORRESPONDS_TO_STEP = PREFIX_P_PLAN+ "correspondsToStep";
     public static final String P_PLAN_PROP_CORRESPONDS_TO_VAR = PREFIX_P_PLAN+ "correspondsToVariable";
+    
     
 }
