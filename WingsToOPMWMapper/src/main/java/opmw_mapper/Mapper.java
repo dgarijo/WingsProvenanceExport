@@ -28,6 +28,7 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
@@ -174,8 +175,8 @@ public class Mapper {
         }
         OPMWModel = ModelFactory.createOntologyModel(); //inicialization of the model        
         try{
-            //load the template file to WINGSModel
-            this.loadTemplateFileToLocalRepository(template, mode);
+            //load the template file to WINGSModel (already loads the taxonomy as well
+            this.loadTemplateFileToLocalRepository(template, mode);            
         }catch(Exception e){
             System.err.println("Error "+e.getMessage());
             return "";
@@ -197,6 +198,10 @@ public class Mapper {
             templateName_=templateName+"_";
             //add the template as a provenance graph
             this.addIndividual(OPMWModel,templateName, Constants.OPMW_WORKFLOW_TEMPLATE, templateName);
+            
+            OntClass cParam = OPMWModel.createClass(Constants.P_PLAN_PLAN);
+            cParam.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+Constants.CONCEPT_WORKFLOW_TEMPLATE+"/"+encode(templateName));
+            
             if(v!=null){
                 this.addDataProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE+"/"+templateName,""+ v.getInt(),
                         Constants.OPMW_DATA_PROP_VERSION_NUMBER, XSDDatatype.XSDint);
@@ -266,7 +271,10 @@ public class Mapper {
             System.out.println(res+" Node has component "+comp+" of type: "+ typeComp);//+ " which is concrete: "+isConcrete.getBoolean()
             //add each of the nodes as a UniqueTemplateProcess
             this.addIndividual(OPMWModel,templateName_+res.getLocalName(),Constants.OPMW_WORKFLOW_TEMPLATE_PROCESS, "Workflow template process "+res.getLocalName());
-                     
+            //p-plan interop
+            OntClass cStep = OPMWModel.createClass(Constants.P_PLAN_STEP);
+            cStep.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+encode(templateName_+res.getLocalName()));
+            
             if(typeComp.isURIResource()){ //only adds the type if the type is a uRI (not a blank node)
                 String tempURI = encode(Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+res.getLocalName());
                 OntClass cAux = OPMWModel.createClass(typeComp.getURI());//repeated tuples will not be duplicated
@@ -280,42 +288,46 @@ public class Mapper {
                         Constants.OPMW_PROP_IS_STEP_OF_TEMPLATE);            
         }
         //retrieval of the dataVariables
-        String queryDataV = Queries.queryDataV();
-        r = null;
+        String queryDataV = Queries.queryDataV2();
         r = queryLocalWINGSTemplateModelRepository(queryDataV);
+//        ResultSetFormatter.out(r);
         while(r.hasNext()){
             QuerySolution qs = r.next();
-            Resource res = qs.getResource("?d");
-            Resource opt = qs.getResource("?t");
+            Resource variable = qs.getResource("?d");
+            Resource type = qs.getResource("?t");
             Literal dim = qs.getLiteral("?hasDim");            
-            this.addIndividual(OPMWModel,templateName_+res.getLocalName(), Constants.OPMW_DATA_VARIABLE, "Data variable "+res.getLocalName());
+            this.addIndividual(OPMWModel,templateName_+variable.getLocalName(), Constants.OPMW_DATA_VARIABLE, "Data variable "+variable.getLocalName());
+            //p-plan interop
+            OntClass cVar = OPMWModel.createClass(Constants.P_PLAN_Variable);
+            cVar.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+Constants.CONCEPT_DATA_VARIABLE+"/"+encode(templateName_+variable.getLocalName()));
+           
             //we add the individual as a workflowTemplateArtifact as well            
-            String aux = encode(Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+res.getLocalName());
+            String aux = encode(Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+variable.getLocalName());
             OntClass cAux = OPMWModel.createClass(Constants.OPMW_WORKFLOW_TEMPLATE_ARTIFACT);//repeated tuples will not be duplicated
             cAux.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+aux);
                    
             if(dim!=null){//sometimes is null, but it shouldn't
-                this.addDataProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+res.getLocalName(),
+                this.addDataProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+variable.getLocalName(),
                         ""+dim.getInt(), Constants.OPMW_DATA_PROP_HAS_DIMENSIONALITY, XSDDatatype.XSDint);
-                System.out.println(res+" has dim: "+dim.getInt());
+                //System.out.println(res+" has dim: "+dim.getInt());
             }
-            /*IF THE TYPES OF DATA VARIABLES ARE GOING TO BE ADDED, LOOK AT ISSUE #7 ON GITHUB*/
-//            if(opt!=null){
-//                //sometimes there are some blank nodes asserted as types in the ellaboration.
-//                //This will remove the blank nodes.
-//                if(opt.isURIResource()){
-//                    System.out.println(res+" of type "+ opt);
-//                    //add the individual as an instance of another class, not as a new individual
-//                    String nameEncoded = encode(Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+res.getLocalName());
-//                    OntClass c = OPMWModel.createClass(opt.getURI());
-//                    c.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+nameEncoded);
-//                }else{
-//                    System.out.println("ANON RESOURCE "+opt.getURI()+" ignored");
-//                }
-//            }else{
-//                System.out.println(res);
-//            }
-            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+res.getLocalName(),
+            //types of data variables
+            if(type!=null){
+                //sometimes there are some blank nodes asserted as types in the ellaboration.
+                //This will remove the blank nodes.
+                if(type.isURIResource()){
+                    System.out.println(variable+" of type "+ type);
+                    //add the individual as an instance of another class, not as a new individual
+                    String nameEncoded = encode(Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+variable.getLocalName());
+                    OntClass c = OPMWModel.createClass(type.getURI());
+                    c.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+nameEncoded);
+                }else{
+                    System.out.println("ANON RESOURCE "+type.getURI()+" ignored");
+                }
+            }else{
+                System.out.println(variable);
+            }
+            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+variable.getLocalName(),
                     Constants.CONCEPT_WORKFLOW_TEMPLATE+"/"+templateName,
                         Constants.OPMW_PROP_IS_VARIABLE_OF_TEMPLATE);
         }
@@ -329,6 +341,10 @@ public class Mapper {
 //            Literal parValue = qs.getLiteral("?parValue");
             System.out.println(res);
             this.addIndividual(OPMWModel,templateName_+res.getLocalName(), Constants.OPMW_PARAMETER_VARIABLE, "Parameter variable "+res.getLocalName());
+            //p-plan interop
+            OntClass cVar = OPMWModel.createClass(Constants.P_PLAN_Variable);
+            cVar.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+Constants.CONCEPT_PARAMETER_VARIABLE+"/"+encode(templateName_+res.getLocalName()));
+           
             //add the parameter value as an artifact too
             String aux = encode(Constants.CONCEPT_PARAMETER_VARIABLE+"/"+templateName_+res.getLocalName());
             OntClass cAux = OPMWModel.createClass(Constants.OPMW_WORKFLOW_TEMPLATE_ARTIFACT);//repeated tuples will not be duplicated
@@ -351,6 +367,13 @@ public class Mapper {
             this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
                         Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
                             Constants.OPMW_PROP_USES);
+            //p-plan interop
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                        Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                            Constants.P_PLAN_PROP_HAS_INPUT);
+            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                        Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                            Constants.P_PLAN_PROP_IS_INTPUT_VAR_OF);
             if(role!=null){
                 System.out.println("Node "+resNode.getLocalName() +" Uses "+ resVar.getLocalName()+ " Role: "+role);
                 //add the roles as subproperty of used. This triple should be on the ontology.
@@ -375,6 +398,13 @@ public class Mapper {
             this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
                         Constants.CONCEPT_PARAMETER_VARIABLE+"/"+templateName_+resVar.getLocalName(),
                             Constants.OPMW_PROP_USES);
+            //p-plan interop
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                        Constants.CONCEPT_PARAMETER_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                            Constants.P_PLAN_PROP_HAS_INPUT);
+            this.addProperty(OPMWModel,Constants.CONCEPT_PARAMETER_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                        Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                            Constants.P_PLAN_PROP_IS_INTPUT_VAR_OF);
             if(role!=null){
                 System.out.println("Node "+resNode.getLocalName() +" Uses "+ resVar.getLocalName()+ " Role: "+role);
                 //add the roles as subproperty of used. This triple should be on the ontology.
@@ -385,6 +415,7 @@ public class Mapper {
                 this.createSubProperty(OPMWModel,Constants.OPMW_PROP_USES, Constants.PREFIX_EXTENSION+"usesAs_"+role);
                 OntProperty propUsed = OPMWModel.getOntProperty(Constants.PREFIX_EXTENSION+"usesAs_"+role);
                 propUsed.addLabel("Property that indicates that a resource has been used as a "+role, "EN");
+//                System.out.println(resVar.getLocalName() +" type "+ qs.getResource("?t").getURI());
             }
         }
 
@@ -400,6 +431,13 @@ public class Mapper {
             this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
                     Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
                         Constants.OPMW_PROP_IGB);
+            //p-plan interop
+            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                        Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                            Constants.P_PLAN_PROP_IS_OUTPUT_VAR_OF);
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                        Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                            Constants.P_PLAN_PROP_HAS_OUTPUT);            
             if(role!=null){
                 System.out.println("Artifact "+ resVar.getLocalName()+" Is generated by node "+resNode.getLocalName()+" Role "+role);
                 //add the roles as subproperty of used. This triple should be on the ontology.
@@ -435,6 +473,19 @@ public class Mapper {
             this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNodeD.getLocalName(),
                         Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
                             Constants.OPMW_PROP_USES);
+            //p-plan interop
+            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                        Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                            Constants.P_PLAN_PROP_IS_OUTPUT_VAR_OF);
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
+                        Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                            Constants.P_PLAN_PROP_HAS_OUTPUT);
+            this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNodeD.getLocalName(),
+                        Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                            Constants.P_PLAN_PROP_HAS_INPUT);
+            this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
+                        Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNodeD.getLocalName(),
+                            Constants.P_PLAN_PROP_IS_INTPUT_VAR_OF);            
             if(roleOrig!=null){                
                 this.addProperty(OPMWModel,Constants.CONCEPT_DATA_VARIABLE+"/"+templateName_+resVar.getLocalName(),
                     Constants.CONCEPT_WORKFLOW_TEMPLATE_PROCESS+"/"+templateName_+resNode.getLocalName(),
@@ -802,6 +853,9 @@ public class Mapper {
             System.out.println("step "+step +"used param: "+paramName+" with value: "+paramvalue);
             this.addIndividual(OPMWModel, paramName+date,
                     Constants.OPMW_WORKFLOW_EXECUTION_ARTIFACT, "Parameter with value: "+paramvalue);
+            String auxParam = encode(Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date);
+            OntClass cParam = OPMWModel.createClass(Constants.OPM_ARTIFACT);
+            cParam.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+auxParam);
             this.addDataProperty(OPMWModel, 
                     Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+paramName+date, 
                     paramvalue, 
@@ -921,10 +975,12 @@ public class Mapper {
                     obj,
                     prop);
             }
+            
             /*************************
             * PROV-O INTEROPERABILITY
             *************************/ 
-            cP = OPMWModel.createClass(Constants.PROV_ENTITY);
+            
+            cP = PROVModel.createClass(Constants.PROV_ENTITY);
             cP.createIndividual(Constants.PREFIX_EXPORT_RESOURCE+auxP);
         }
 

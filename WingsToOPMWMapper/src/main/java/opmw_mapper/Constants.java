@@ -200,7 +200,10 @@ public class Constants {
     public static final String WINGS_DATA_PROP_HAS_START_TIME = PREFIX_WEXEC + "hasStartTime";
     public static final String WINGS_DATA_PROP_HAS_END_TIME = PREFIX_WEXEC + "hasEndTime";    
     public static final String WINGS_DATA_PROP_HAS_LICENSE = PREFIX_WEXEC + "hasLicense";
-    public static final String WINGS_DATA_PROP_HAS_CREATION_TOOL = PREFIX_WEXEC + "creationTool";   
+    public static final String WINGS_DATA_PROP_HAS_CREATION_TOOL = PREFIX_WEXEC + "creationTool";  
+    
+    //component (to get variabletypes)
+    public static final String WINGS_DATA_PROP_HAS_ARGUMENT_ID = "http://www.wings-workflows.org/ontology/component.owl#hasArgumentID";
     
     /**
      * WF-INVOC
@@ -241,11 +244,18 @@ public class Constants {
     /*****
     P-Plan classes
     *****/
-    //TO DO IF A P-PLAN REPRESENTATION IS ADDED.
+    public static final String P_PLAN_PLAN = PREFIX_P_PLAN+ "Plan";
+    public static final String P_PLAN_STEP = PREFIX_P_PLAN+ "Step";
+    public static final String P_PLAN_Variable = PREFIX_P_PLAN+ "Variable";
     
     /*****
     P-Plan properties
     *****/
     public static final String P_PLAN_PROP_HAS_INPUT = PREFIX_P_PLAN+ "hasInputVar";
     public static final String P_PLAN_PROP_HAS_OUTPUT = PREFIX_P_PLAN+ "hasOutputVar";
+    public static final String P_PLAN_PROP_IS_INTPUT_VAR_OF = PREFIX_P_PLAN+ "isInputVarOf";
+    public static final String P_PLAN_PROP_IS_OUTPUT_VAR_OF = PREFIX_P_PLAN+ "isOutputVarOf";
+    public static final String P_PLAN_PROP_CORRESPONDS_TO_STEP = PREFIX_P_PLAN+ "correspondsToStep";
+    public static final String P_PLAN_PROP_CORRESPONDS_TO_VAR = PREFIX_P_PLAN+ "correspondsToVariable";
+    
 }
