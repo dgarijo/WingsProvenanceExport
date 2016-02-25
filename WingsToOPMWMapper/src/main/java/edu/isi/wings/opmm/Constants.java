@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package opmw_mapper;
+package edu.isi.wings.opmm;
 
 /**
  *
@@ -25,7 +25,7 @@ public class Constants {
     /*****
     ONTOLOGY PREFIXES
     *****/
-    public static final String PREFIX_EXPORT_RESOURCE =  "http://www.opmw.org/export/resource/";
+    public static String PREFIX_EXPORT_RESOURCE =  "http://www.opmw.org/export/resource/";
     public static final String PREFIX_EXTENSION =  "http://www.opmw.org/extension/";
     public static final String PREFIX_OPMW =  "http://www.opmw.org/ontology/";
     public static final String PREFIX_OPMO =  "http://openprovenance.org/model/opmo#";
@@ -235,6 +235,7 @@ public class Constants {
     public static final String PROV_HAD_PRIMARY_SOURCE = PREFIX_PROV+ "hadPrimarySource";
     public static final String PROV_STARTED_AT_TIME = PREFIX_PROV+ "startedAtTime";
     public static final String PROV_ENDED_AT_TIME = PREFIX_PROV+ "endedAtTime";
+    public static final String PROV_WAS_DERIVED_FROM = PREFIX_PROV+ "wasDerivedFrom";
                 
     /*****
     other useful properties
@@ -259,6 +260,8 @@ public class Constants {
     public static final String P_PLAN_PROP_IS_OUTPUT_VAR_OF = PREFIX_P_PLAN+ "isOutputVarOf";
     public static final String P_PLAN_PROP_CORRESPONDS_TO_STEP = PREFIX_P_PLAN+ "correspondsToStep";
     public static final String P_PLAN_PROP_CORRESPONDS_TO_VAR = PREFIX_P_PLAN+ "correspondsToVariable";
+    public static final String P_PLAN_PROP_IS_STEP_OF_PLAN =  PREFIX_P_PLAN+ "isStepOfPlan";
+    
     
     
 }

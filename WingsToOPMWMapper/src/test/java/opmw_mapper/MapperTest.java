@@ -5,6 +5,7 @@
  */
 package opmw_mapper;
 
+import edu.isi.wings.opmm.Mapper;
 import java.io.File;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -26,18 +27,18 @@ public class MapperTest {
         String outFile = "testTemplate";
         Mapper instance = new Mapper();
         //template with abstract nodes: abstractWords
-        System.out.println("Transforming an abstract template...");
-        assertNotSame("",instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile));
+//        System.out.println("Transforming an abstract template...");
+//        assertNotSame("",instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile));
         //template with collections
         System.out.println("Transforming a template with collections");
         template = "src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Template.owl";
-        assertNotSame("",instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile));
+        assertNotSame("",instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile,null));
         //delete output files.
-        File f = new File(outFile);
-        f.delete();
+        //File f = new File(outFile);
+        //f.delete();
     }
     
-//    @Test
+    @Test
     public void testtransformWINGSResultsToOPMW(){
         System.out.println("Transform an execution to OPMW and PROV ");
         Mapper instance = new Mapper();
@@ -47,18 +48,18 @@ public class MapperTest {
         String outFileOPMW = "testResult";
         String outFilePROV = "testResult2";        
         //template with abstract nodes:
-        System.out.println("Transforming an execution of an abstract template...");
-        assertNotSame("",instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV));
+//        System.out.println("Transforming an execution of an abstract template...");
+//        assertNotSame("",instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV));
         //template with collections
         System.out.println("Transforming an execution of a template with collections...");
         lib="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Library.owl";
         execution="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Execution.owl";
-        assertNotSame("",instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV));
+        assertNotSame("",instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV,null));
         //delete output files
         File f = new File(outFileOPMW);
         File f2 = new File(outFilePROV);
-        f.delete();
-        f2.delete();
+        //f.delete();
+        //f2.delete();
     }
     
 }

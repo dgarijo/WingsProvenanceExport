@@ -1,4 +1,4 @@
-package opmw_mapper;
+package edu.isi.wings.opmm;
 
 /**
  * This class shows how the mapper should be run, with a complete example from a run and a template.
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Transforming an execution of a template with collections...");
         lib="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Library.owl";
         execution="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Execution.owl";
-        instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV);
-        instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile);
+        instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV,null);
+        instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile, null);
     }
 }
