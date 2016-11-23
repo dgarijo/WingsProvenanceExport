@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:j.0="http://www.wings-workflows.org/ontology/execution.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae.owl">
+      <j.0:Execution rdf:ID="MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae">
+            <j.0:hasPlan rdf:resource="MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#MpileupCallerNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:00:39.634Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:00.214Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/scratch/data/wings/storage/default/users/ravali/genomics/code/library/MpileupCaller/run -p3 0 -i1 /scratch/data/wings/storage/default/users/ravali/genomics/data/bxeng_test.bam -i2 /scratch/data/wings/storage/default/users/ravali/genomics/data/chr1.fa -p1 20 -p2 3 -o1 /scratch/data/wings/storage/default/users/ravali/genomics/data/mpileupVCFFile-3snpmxpgpeu930148unjgunyc
+/scratch/software/samtools-1.3/samtools mpileup -f /scratch/data/wings/storage/default/users/ravali/genomics/data/chr1.fa -v -u -q 20 -m 3 -Q 0 -o /scratch/data/wings/storage/default/users/ravali/genomics/data/mpileupVCFFile-3snpmxpgpeu930148unjgunyc /scratch/data/wings/storage/default/users/ravali/genomics/data/bxeng_test.bam
+[fai_load] build FASTA index.
+[mpileup] 8 samples in 1 input files
+&lt;mpileup&gt; Set max per-file depth to 1000
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#bcftoolsCallVariantsNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:00.217Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:02.555Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/scratch/data/wings/storage/default/users/ravali/genomics/code/library/bcftoolsCallVariants/run -i1 /scratch/data/wings/storage/default/users/ravali/genomics/data/mpileupVCFFile-3snpmxpgpeu930148unjgunyc -o1 /scratch/data/wings/storage/default/users/ravali/genomics/data/variantVCFFile-7rv3txw7xnazbyfapqz63nuo3
+/scratch/software/bcftools-1.3/bcftools call -vmO v -o /scratch/data/wings/storage/default/users/ravali/genomics/data/variantVCFFile-7rv3txw7xnazbyfapqz63nuo3 /scratch/data/wings/storage/default/users/ravali/genomics/data/mpileupVCFFile-3snpmxpgpeu930148unjgunyc
+Note: Neither --ploidy nor --ploidy-file given, assuming all sites are diploid
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasStep>
+                  <j.0:ExecutionStep rdf:about="MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#varFilterSamtoolsNode">
+                        <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:02.558Z</j.0:hasStartTime>
+                        <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:02.613Z</j.0:hasEndTime>
+                        <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUCCESS</j.0:hasExecutionStatus>
+                        <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/scratch/data/wings/storage/default/users/ravali/genomics/code/library/varFilterSamtools/run -i1 /scratch/data/wings/storage/default/users/ravali/genomics/data/variantVCFFile-7rv3txw7xnazbyfapqz63nuo3 -p1 3 -p2 20 -o1 /scratch/data/wings/storage/default/users/ravali/genomics/data/variantFiltVCFFile-888n731cpxj1zipyy8a5s0j8p
+
+</j.0:hasLog>     </j.0:ExecutionStep>
+            </j.0:hasStep>
+            <j.0:hasTemplate rdf:resource="../workflows/MpileupVariantCaller-d751713988987e9331980363e24189ce.owl#MpileupVariantCaller-d751713988987e9331980363e24189ce"/>
+            <j.0:hasExpandedTemplate rdf:resource="MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578"/>
+            <j.0:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:00:39.632Z</j.0:hasStartTime>
+            <j.0:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-17T00:01:02.617Z</j.0:hasEndTime>
+            <j.0:hasExecutionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUCCESS</j.0:hasExecutionStatus>
+            <j.0:hasLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finished
+</j.0:hasLog>
+            <j.0:hasSeededTemplate rdf:resource="../workflows/MpileupVariantCa-4f00eea4-78b9-411a-987e-d2f1583bda19.owl#MpileupVariantCa-4f00eea4-78b9-411a-987e-d2f1583bda19"/>
+      </j.0:Execution>
+</rdf:RDF>

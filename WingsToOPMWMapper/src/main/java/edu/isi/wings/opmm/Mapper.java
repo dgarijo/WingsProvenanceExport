@@ -537,6 +537,7 @@ public class Mapper {
  * @param modeFile the serialization of the data (e.g., RDF/XML)
  * @param outFilenameOPMW output name for the OPMW serialization
  * @param outFilenamePROV output name for the PROV serialization
+ * @param suffix id to be added to identify uniquely certain resources
  * @return 
  */
     //public String transformWINGSResultsToOPMW(String resultFile, String libraryFile, String modeFile, String outFilenameOPMW, String outFilenamePROV){
@@ -817,16 +818,16 @@ public class Mapper {
                     addProperty(OPMWModel.createOntProperty(Constants.OPMW_PROP_HAS_EXECUTABLE_COMPONENT), 
                             blankNode);
             /*************************
-            * PROV-O INTEROPERABILITY
+            * PROV-O INTEROPERABILITY (commented because it makes it more difficult to understand. It is done through the hasExecutableComponent relationship
             *************************/ 
-            Resource bnodeProv = PROVModel.createResource();
+            /*Resource bnodeProv = PROVModel.createResource();
             bnodeProv.addProperty(PROVModel.createOntProperty(Constants.PROV_AT_LOCATION),
                     sCode).
                     addProperty(PROVModel.createOntProperty(Constants.RDFS_LABEL), 
                             "Executable Component associated to "+stepName);
             PROVModel.getResource(procURI).
-                    addProperty(PROVModel.createOntProperty(Constants.OPM_PROP_USED), 
-                            bnodeProv);
+                    addProperty(PROVModel.createOntProperty(Constants.PROV_USED), 
+                            bnodeProv);*/
             
             //link node  to the process templates
             this.addProperty(OPMWModel,Constants.CONCEPT_WORKFLOW_EXECUTION_PROCESS+"/"+stepName+date,
@@ -992,7 +993,7 @@ public class Mapper {
                         Constants.P_PLAN_PROP_CORRESPONDS_TO_VAR);
             }else
             //metadata
-            if(prop.contains("type")){
+            if(prop.contains("http://www.w3.org/2000/01/rdf-schema#type")){
                 //the objects are resources in this case
                 //String auxP = encode(Constants.CONCEPT_WORKFLOW_EXECUTION_ARTIFACT+"/"+var+date);
                 cP = OPMWModel.createClass(obj);

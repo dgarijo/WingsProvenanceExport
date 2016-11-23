@@ -24,7 +24,13 @@ public class Main {
         System.out.println("Transforming an execution of a template with collections...");
         lib="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Library.owl";
         execution="src\\main\\java\\sample_data\\new\\aquaflow_ntm\\Execution.owl";
-        instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV,null);
-        instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile, null);
+//        instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV,null);
+//        instance.transformWINGSElaboratedTemplateToOPMW(template, mode, outFile, null);
+
+        //test problematic run
+        lib = "src\\main\\java\\sample_data\\new\\mpileupVariant\\Library.owl";
+        execution = "src\\main\\java\\sample_data\\new\\mpileupVariant\\execution.owl";
+        
+        instance.transformWINGSResultsToOPMW(execution, lib, mode, outFileOPMW, outFilePROV, null);
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1459183784962" name="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/executions/AquaFlow_NTM_EDM-82ac8c45-1d2d-43bf-947b-1eb40b68e783.owl" uri="Execution.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1459183784962" name="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/executions/library.owl" uri="Library.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1459183784962" name="http://www.wings-workflows.org/wings-portal/export/users/admin/Water/workflows/AquaFlow_NTM_EDM.owl" uri="Template.owl"/>
+    </group>
+</catalog>

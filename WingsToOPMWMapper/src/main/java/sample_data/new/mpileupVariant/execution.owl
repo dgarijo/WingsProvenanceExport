@@ -1,0 +1,78 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/workflow.owl#"
+    xmlns:j.1="http://purl.org/net/wf-invocation#"
+    xmlns:j.2="http://purl.org/net/p-plan#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+      <j.1:Step rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#bcftoolsCallVariantsNode">
+            <j.0:canRunOn rdf:resource="http://www.wings-workflows.org/ontology/resource.owl#Localhost"/>
+            <j.2:hasOutputVar>
+                  <j.1:Variable rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#variantVCFFile">
+                        <j.1:hasDataBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/data/variantVCFFile-7rv3txw7xnazbyfapqz63nuo3</j.1:hasDataBinding>
+                        <j.2:isVariableOfPlan>
+                              <j.2:Plan rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+                        </j.2:isVariableOfPlan>
+                  </j.1:Variable>
+            </j.2:hasOutputVar>
+            <j.2:hasInputVar>
+                  <j.1:Variable rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#mpileupVCFFile">
+                        <j.1:hasDataBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/data/mpileupVCFFile-3snpmxpgpeu930148unjgunyc</j.1:hasDataBinding>
+                        <j.2:isVariableOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+                  </j.1:Variable>
+            </j.2:hasInputVar>
+            <j.2:hasInvocationLine rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></j.2:hasInvocationLine>
+            <j.0:hasCustomData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >CodeDirectory=http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/bcftoolsCallVariants</j.0:hasCustomData>
+            <j.1:hasCodeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/bcftoolsCallVariants/run</j.1:hasCodeBinding>
+            <j.2:isStepOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+      </j.1:Step>
+      <j.1:Step rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#MpileupCallerNode">
+            <j.0:canRunOn rdf:resource="http://www.wings-workflows.org/ontology/resource.owl#Localhost"/>
+            <j.2:hasOutputVar rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#mpileupVCFFile"/>
+            <j.2:hasInputVar>
+                  <j.1:Variable rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#inputBamFile">
+                        <j.1:hasDataBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/data/bxeng_test.bam</j.1:hasDataBinding>
+                        <j.2:isVariableOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+                  </j.1:Variable>
+            </j.2:hasInputVar>
+            <j.2:hasInputVar>
+                  <j.1:Variable rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#inputFastaFile">
+                        <j.1:hasDataBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/data/chr1.fa</j.1:hasDataBinding>
+                        <j.2:isVariableOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+                  </j.1:Variable>
+            </j.2:hasInputVar>
+            <j.2:hasInvocationLine rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></j.2:hasInvocationLine>
+            <j.0:hasCustomData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >CodeDirectory=http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/MpileupCaller</j.0:hasCustomData>
+            <j.1:hasCodeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/MpileupCaller/run</j.1:hasCodeBinding>
+            <j.2:isStepOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+      </j.1:Step>
+      <j.1:Step rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#varFilterSamtoolsNode">
+            <j.0:canRunOn rdf:resource="http://www.wings-workflows.org/ontology/resource.owl#Localhost"/>
+            <j.2:hasOutputVar>
+                  <j.1:Variable rdf:about="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#variantFiltVCFFile">
+                        <j.1:hasDataBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/data/variantFiltVCFFile-888n731cpxj1zipyy8a5s0j8p</j.1:hasDataBinding>
+                        <j.2:isVariableOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+                  </j.1:Variable>
+            </j.2:hasOutputVar>
+            <j.2:hasInputVar rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-ffef1296-ab9a-4af3-8fa3-df8311884578.owl#variantVCFFile"/>
+            <j.2:hasInvocationLine rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></j.2:hasInvocationLine>
+            <j.0:hasCustomData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >CodeDirectory=http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/varFilterSamtools</j.0:hasCustomData>
+            <j.1:hasCodeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/code/varFilterSamtools/run</j.1:hasCodeBinding>
+            <j.2:isStepOfPlan rdf:resource="http://disk.isi.edu/uploads/MpileupVariantCa-f9c02582-911d-436d-8413-aa3a31c36dae/ont/executions/MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f.owl#MpileupVariantCa-f9fea660-c43d-4671-aac7-6c1fd3dc949f"/>
+      </j.1:Step>
+</rdf:RDF>
